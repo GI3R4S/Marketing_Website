@@ -2,45 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pióropusznik - Matteuccia</title>
+    <title>Pensjonat Arkadia</title>
+    <meta name="description" content="Strona poświęcona prezentacji działalności pensjonatu agroturystycznego 'Pensjonat Arkadia'">
+    <meta name="keywords" content="pensjonat arkadia agroturystyka noclegi obiady imprezy masowe">
+    <link href="index.html" rel="canonical">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </head>
 <link rel="Stylesheet" href="CSS/style.css" type="text/css">
 <body>
-<div class="topnav">
-    <a href="index.html">Strona główna</a>
-    <a href="galeria.html">Galeria</a>
-    <a href="cennik.html">Cennik</a>
-    <a href="kontakt.html">Kontakt</a>
-</div>
+<nav class="navigation-bar">
+    <a style="background-color: #f9f9f9" href="index.html"><img class="logo" src="img/logotyp.svg" alt="Logotyp"></a>
+    <a class="navref" href="galeria.html">Galeria</a>
+    <a class="navref" href="oferta.html">Oferta</a>
+    <a class="navref" href="kontakt.html">Kontakt</a>
+</nav>
 <div class="content">
-    <section>
-        <h1>Zdjęcia</h1>
-        <div>
-            Więcej informacji na stronach internetowych, które są dostępne po kliknięciu zdjęć poniżej:
+    <div class="section">
+        <div class="breadcrumbContainer">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
         </div>
-        <p></p>
-        <p></p>
-        <a href="https://zielonyogrodek.pl/katalog-roslin/byliny/9840-pioropusznik-strusi"><img
-                src="img/pioropusznik.jpg" style="border: 0" width="450" height="676"/></a>
-        <div class="description">
-            Pióropusznik strusi 1
+        <div class="slideshow-container" onload="currentSlide(1)">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 14</div>
+                <img src="img/225.jpg" alt="Photo 1" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 14</div>
+                <img src="img/3993.jpg" alt="Photo 2" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 14</div>
+                <img src="img/anvil.jpg" alt="Photo 3" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 14</div>
+                <img src="img/cows.jpg" alt="Photo 4" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 14</div>
+                <img src="img/fields.jpg" alt="Photo 5" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 14</div>
+                <img src="img/goose.jpg" alt="Photo 6" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 14</div>
+                <img src="img/horses.jpg" alt="Photo 7" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 14</div>
+                <img src="img/house.jpg" alt="Photo 8" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 14</div>
+                <img src="img/house2.jpg" alt="Photo 9" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 14</div>
+                <img src="img/maselnice.jpg" alt="Photo 10" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">11 / 14</div>
+                <img src="img/sheeps.jpg" alt="Photo 11" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">12 / 14</div>
+                <img src="img/straw_rolls.jpg" alt="Photo 12" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">13 / 14</div>
+                <img src="img/studnia.jpg" alt="Photo 13" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">14 / 14</div>
+                <img src="img/woodStack.jpg" alt="Photo 14" style="width:100%">
+            </div>
+
+            <div class="prev" onclick="plusSlides(-1)">
+                <div class="arrow">&#10094;</div>
+            </div>
+            <div class="next" onclick="plusSlides(1)">
+                <div class="arrow"> &#10095;
+                </div>
+            </div>
         </div>
-        <p></p>
-        <p></p>
-        <a href="http://rosliny.urzadzamy.pl/baza-roslin/byliny/pioropusznik-strusi,5_519/"><img
-                src="img/pioropusznik2.jpg" style="border: 0" width="450" height="675"/></a>
-        <div class="description">
-            Pióropusznik strusi 2
+        <script>
+            currentSlide(1);
+        </script>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
         </div>
-        <p></p>
-        <p></p>
-        <a href="https://www.medianauka.pl/pioropusznik-strusi"><img src="img/pioropusznik3.jpg" style="border: 0"
-                                                                     width="450" height="677"/></a>
-        <div class="description">
-            Pióropusznik strusi 3
-        </div>
-        <p></p>
-    </section>
+    </div>
 </div>
+<table class="footer" style="border: white solid 1px;">
+    <tr>
+        <td class="column">
+            <a class="firstColumnRef" href="index.html">Strona główna</a>
+            <a class="firstColumnRef" href="galeria.html">Galeria</a>
+            <a class="firstColumnRef" href="oferta.html">Oferta</a>
+            <a class="firstColumnRef" href="kontakt.html">Kontakt</a>
+        </td>
+        <td class="column" style="border-left: #ffffff 1px solid;">
+            <div class="secondAndThirdColumn">
+                Zadzwoń do nas <i class="fa fa-phone-square" aria-hidden="true"></i>:
+            </div>
+            <div class="secondAndThirdColumn">
+                Napisz do nas <i class="fa fa-envelope" aria-hidden="true"></i>:
+            </div>
+            <div class="secondAndThirdColumn">
+                Odwiedź nas <i class="fa fa-home" aria-hidden="true"></i>:
+            </div>
+        </td>
+        <td class="column">
+            <div style="margin-top:5.75%">
+                <div class="secondAndThirdColumn">
+                    +48 123 456 789
+                </div>
+                <div class="secondAndThirdColumn">
+                    <a style="text-decoration: none; text-align: left; color: #86C232;"
+                       href="mailto:pensjonat.arkadia@gmail.com">pensjonat.arkadia@gmail.com</a>
+                </div>
+                <div class="secondAndThirdColumn">
+                    Arkadia 777, 99-416 Nieborów<br/>
+                    Godziny od 8:00 do 16:00
+                </div>
+            </div>
+        </td>
+        <td class="column" style="border-left: #ffffff 1px solid;">
+            <div style="text-align: center; padding-bottom: 20px">
+                Możecie nas znaleźć na:
+            </div>
+            <div class="icons">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </div>
+            <div class="icons">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-skype" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </div>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
